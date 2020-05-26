@@ -1,0 +1,24 @@
+﻿Step 1：
+	//更新舰娘数据
+	HOST/datamanager/zjsnr/ships/info
+	//更新cid与名称对应表（用于掉落查询）
+	HOST/datamanager/zjsnr/shipnamemap/create
+
+Step 2:
+	//更新装备数据
+	HOST/datamanager/zjsnr/equipments/info
+	//更新装备类型数据
+	HOST/datamanager/zjsnr/equipments/shiptype
+	
+Step 3:
+	//更新敌人数据（清空表war_ship_girls_enemy）
+	HOST/datamanager/zjsnr/enemy/info
+	//1-5暴走船需要手动调一下数据库
+	
+Step 4:
+	//更新离线资料（清空表war_ship_girls_build_time, war_ship_girls_expedition, war_ship_girls_map_setting, war_ship_girls_academy）
+	HOST/datamanager/zjsnr/offlinedata
+	
+可选操作:
+	//更新炮序数据（清空表war_ship_girls_cannonary）
+	HOST/datamanager/zjsnr/cannonry
